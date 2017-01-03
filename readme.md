@@ -5,6 +5,7 @@ A PHP wrapper to fetch data from `exiftools` util.
 [![Total Downloads](https://poser.pugx.org/vvval/exiftool-reader/downloads)](https://packagist.org/packages/vvval/exiftool-reader) 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vvval/exiftool-reader/badges/quality-score.png)](https://scrutinizer-ci.com/g/vvval/exiftool-reader) 
 [![Build Status](https://travis-ci.org/vvval/exiftool-reader.svg?branch=master)](https://travis-ci.org/vvval/exiftool-reader)
+[![License](https://poser.pugx.org/vvval/exiftool-reader/license)](https://packagist.org/packages/vvval/exiftool-reader)
 
 ## Installation
 ```
