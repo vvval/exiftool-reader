@@ -14,4 +14,4 @@ addons:
     packages:
     - libimage-exiftool-perl
 
-script: phpunit --no-extensions
+script: phpunit
