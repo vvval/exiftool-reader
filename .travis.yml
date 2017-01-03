@@ -12,6 +12,6 @@ install:
 addons:
   apt:
     packages:
-    - exiftool
+    - libimage-exiftool-perl
 
 script: phpunit
