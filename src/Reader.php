@@ -11,11 +11,6 @@ use Symfony\Component\Process\Process;
 class Reader
 {
     /**
-     * @var Exiftool
-     */
-    private $config;
-
-    /**
      * @var Command
      */
     private $command;
@@ -28,7 +23,6 @@ class Reader
      */
     public function __construct(Exiftool $config, Command $command)
     {
-        $this->config = $config;
         $this->command = $command;
     }
 

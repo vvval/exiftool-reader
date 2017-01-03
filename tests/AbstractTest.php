@@ -92,7 +92,7 @@ abstract class AbstractTest extends \PHPUnit_Framework_TestCase
      */
     protected function makeReader()
     {
-        return $this->makeClass(Reader::class, $this->makeExiftool(), $this->makeCommand());
+        return $this->makeClass(Reader::class, $this->makeCommand());
     }
 
     /**
