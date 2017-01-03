@@ -2,7 +2,6 @@
 
 namespace ExiftoolReader;
 
-use ExiftoolReader\Config\Exiftool;
 use Symfony\Component\Process\Process;
 
 /**
@@ -18,10 +17,9 @@ class Reader
     /**
      * Reader constructor.
      *
-     * @param Exiftool $config
-     * @param Command         $command
+     * @param Command $command
      */
-    public function __construct(Exiftool $config, Command $command)
+    public function __construct(Command $command)
     {
         $this->command = $command;
     }
