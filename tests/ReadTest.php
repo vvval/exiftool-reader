@@ -24,8 +24,9 @@ class ReadTest extends AbstractTest
     public function testEnabled()
     {
         $config = $this->makeExiftool();
-        //Not in /usr/bin/exiftool? add own location
-        $config->mergeConfig(['path' => 'C:\exiftool']);
+
+        //Not in /usr/bin/exiftool? add own location like
+        //$config->mergeConfig(['path' => 'C:\exiftool']);
 
         $this->assertFileExists($config->path());
     }
