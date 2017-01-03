@@ -1,8 +1,8 @@
 # Exiftool reader process wrapper
 A PHP wrapper to fetch data from `exiftools` util.
 
-[![Latest Stable Version](https://poser.pugx.org/spiral/snapshotter/v/stable)](https://packagist.org/packages/vvval/exiftool-reader) 
-[![Total Downloads](https://poser.pugx.org/spiral/snapshotter/downloads)](https://packagist.org/packages/vvval/exiftool-reader) 
+[![Latest Stable Version](https://poser.pugx.org/vvval/exiftool-reader/v/stable)](https://packagist.org/packages/vvval/exiftool-reader) 
+[![Total Downloads](https://poser.pugx.org/vvval/exiftool-reader/downloads)](https://packagist.org/packages/vvval/exiftool-reader) 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vvval/exiftool-reader/badges/quality-score.png)](https://scrutinizer-ci.com/g/vvval/exiftool-reader) 
 
 ## Installation
