@@ -23,15 +23,15 @@ composer require vvval/exiftool-reader
 $output = $reader->read('filename');
 
 /**
- * @var array $decoded Full metadata array
+ * Full metadata array.
  */
 $decoded = $output->getDecoded();
-
-$keys = ['title', 'description'];
+var_dump($decoded); // ['title' => '...', 'description' => '...', ...]
 
 /**
- * @var array $fetchedData Fetched metadata keys.
- * Uses aliases to find values, for example Title|ObjectName, Description|Caption-Abstract|ImageDescription, etc.
+ * Fetched specified metadata keys.
+ * Uses aliases to find values, for example Title|ObjectName, Description|Caption-Abstract|ImageDescription, etc...
  */
-$fetchedData = $metadata->fetch($output, $keys);
+$fetchedData = $metadata->fetch($output, ['title', 'description']);
+var_dump($fetchedData); // ['title' => '...', 'description' => '...']
 ```
