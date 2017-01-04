@@ -96,10 +96,11 @@ abstract class AbstractTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * @param Mapper $mapper
      * @return Metadata
      */
-    protected function makeMetadata()
+    protected function makeMetadata(Mapper $mapper)
     {
-        return $this->makeClass(Metadata::class, $this->makeMapper(), $this->makeUtils());
+        return $this->makeClass(Metadata::class, $mapper, $this->makeUtils());
     }
 }

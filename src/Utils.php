@@ -22,6 +22,7 @@ class Utils
 
     /**
      * Fetch array values by provided keys.
+     * If no value for one of provided keys - key will be skipped.
      *
      * @param array $array
      * @param array $keys
