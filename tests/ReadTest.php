@@ -196,6 +196,14 @@ class ReadTest extends AbstractTest
         );
 
         /**
+         * test callbacks
+         */
+        $this->assertEquals(
+            ['TITLE' => 'Some Title'],
+            $metadata->fetch($result, ['title'], 'strtoupper', 'ucwords')
+        );
+
+        /**
          * Test field not presented in metadata and having an alias will have its value in output.
          */
         $this->assertEquals(
