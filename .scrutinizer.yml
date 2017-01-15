@@ -9,9 +9,9 @@ build:
   tests:
       override:
       -
-          command: "phpunit --coverage-clover ./logs/coverage.clover"
+          command: "phpunit --coverage-clover logs/coverage.clover"
           coverage:
-              file: "./logs/coverage.clover"
+              file: "logs/coverage.clover"
               format: 'clover'
 
 before_commands:
