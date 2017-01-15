@@ -47,14 +47,10 @@ class Metadata
         callable $valueCallback = null
     ) {
         $output = [];
+        $decoded = $input->getDecoded();
 
         foreach ($keys as $key) {
-            $fetched = $this->utils->fetchKeys(
-                $input->getDecoded(),
-                $this->config->getAliases($key)
-            );
-
-            foreach ($fetched as $name => $value) {
+            foreach ($this->getKeyValues($decoded, $key) as $name => $value) {
                 //Get first not-empty value.
                 if (!empty($value)) {
                     if (!empty($keyCallback)) {
@@ -73,5 +69,15 @@ class Metadata
         }
 
         return $output;
+    }
+
+    /**
+     * @param array  $data
+     * @param string $key
+     * @return array
+     */
+    protected function getKeyValues(array $data, $key)
+    {
+        return $this->utils->fetchKeys($data, $this->config->getAliases($key));
     }
 }
