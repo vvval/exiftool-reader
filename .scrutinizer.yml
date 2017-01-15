@@ -7,7 +7,7 @@ build:
           - "sudo apt-get install libimage-exiftool-perl"
 
   tests:
-      before:
+      override:
           command: "phpunit --coverage-clover ./logs/coverage.clover"
           coverage:
               file: "./logs/coverage.clover"
