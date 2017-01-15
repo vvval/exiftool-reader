@@ -8,7 +8,10 @@ build:
 
   tests:
       before:
-          - "phpunit"
+          command: "phpunit --coverage-clover ./logs/coverage.clover"
+          coverage:
+              file: "./logs/coverage.clover"
+              format: 'clover'
 
 before_commands:
     - "composer install --no-interaction --prefer-source"
