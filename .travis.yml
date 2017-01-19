@@ -13,6 +13,9 @@ before_install:
 install:
   - composer install --no-interaction --prefer-source
 
+after_script:
+- php vendor/bin/coveralls -v
+
 addons:
   apt:
     packages:
