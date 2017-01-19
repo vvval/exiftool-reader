@@ -6,6 +6,10 @@ php:
   - '7.1'
   - hhvm
 
+before_install:
+- composer require satooshi/php-coveralls:dev-master
+- composer install --dev
+
 install:
   - composer install --no-interaction --prefer-source
 
@@ -14,4 +18,4 @@ addons:
     packages:
     - libimage-exiftool-perl
 
-script: phpunit
+script: phpunit --coverage-clover ./tests/logs/clover.xml
